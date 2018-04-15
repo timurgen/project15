@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head th:include="fragments/header :: header">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 alert alert-danger padding-top-15">
+                    <h1 class="alert-heading">DISCLAIMER</h1>
+                    <p>This is a demo application that doesn't implement any security at all and may only be used at your own risk</p>
+                    <p>This application holds API keys, tokens etc in memory as plain text and doesn't provide any encryption, take it into account.</p>
+                    <p>This application doesn't persist any data on harddisk and it will be lost after server restart (or after session expired)</p>
+                    <a href="/" class="btn btn-primary">Got it!</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

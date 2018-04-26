@@ -27,6 +27,7 @@ public final class Authenticator {
         final HttpRequestFactory requestFactory = transport.createRequestFactory();
         final HttpRequest tokenRequest = requestFactory.buildPostRequest(new GenericUrl(IDENTITY_SERVER_URL), null);
         final HttpHeaders headers = new HttpHeaders();
+        
         headers.setAccept("application/json");
         headers.setAuthorization("Basic " + authStr);
         tokenRequest.setHeaders(headers);
